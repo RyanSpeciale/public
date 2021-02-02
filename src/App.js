@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { TopNav } from './Components/TopNav/TopNav';
+import React from 'react';
+import { LeftCard } from './Components/LeftCard/LeftCard';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <container className="TopNav">
+        <TopNav />
+      </container>
+      <container  className="LeftCard">
+        <LeftCard />
+      </container>
     </div>
   );
-}
+};
 
 export default App;
